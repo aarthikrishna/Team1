@@ -19,3 +19,10 @@ jobs:
          run:  |
           echo $GITHUB_WORKSPACE 
           ls -lrt
+          cat $GITHUB_WORKSPACE/Aarthi/Aarthi1.txt
+          cat $GITHUB_WORKSPACE/Aarthi/Aarthi2.txt
+          cat $GITHUB_WORKSPACE/Surbhi/Surbhi1.txt
+          cat $GITHUB_WORKSPACE/Surbhi/Surbhi2.txt
+          
+
+          
