@@ -1,6 +1,8 @@
-name: TrainingBatch
+name: CICD
 on: 
-  workflow_dispatch
+  push:
+       branches: [CICD]
+  workflow_dispatch: 
 env:
   artifact_name: ''
 
@@ -22,7 +24,7 @@ jobs:
           cat $GITHUB_WORKSPACE/Aarthi/Aarthi1.txt
           cat $GITHUB_WORKSPACE/Aarthi/Aarthi2.txt
           cat $GITHUB_WORKSPACE/Surbhi/Surbhi1.txt
-          cat $GITHUB_WORKSPACE/Surbhi/Surbhi2.txt
+          cat $GITHUB_WORKSPACE/Surbhi/surbhi2.txt
           
 
           
