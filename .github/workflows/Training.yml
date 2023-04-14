@@ -1,4 +1,4 @@
-name: ratio-exchange
+name: TrainingBatch
 on: 
   workflow_dispatch
 env:
