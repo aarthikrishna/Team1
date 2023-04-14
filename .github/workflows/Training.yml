@@ -1,0 +1,21 @@
+name: ratio-exchange
+on: 
+  workflow_dispatch
+env:
+  artifact_name: ''
+
+jobs: 
+  ######################### CF Compile ###################################
+
+  printtextfile: 
+    runs-on: ubuntu-latest
+    steps:
+       - name: git download 
+         run: |
+          apt update
+          apt install -y git
+       - uses: actions/checkout@v3
+       - name: Print files 
+         run:  |
+          echo $GITHUB_WORKSPACE 
+          ls - lrt
