@@ -1,0 +1,23 @@
+name: Anil
+on: 
+  push:
+     branches: [main]
+  workflow_dispatch:
+env:
+  artifact_name: ''
+
+jobs: 
+  ######################### CF Compile ###################################
+
+  printtextfile: 
+    runs-on: ubuntu-latest
+    steps:
+       - name: git download 
+         run: |
+          sudo apt update
+          sudo apt install -y git
+       - uses: actions/checkout@v3
+       - name: Print files 
+         run:  |
+          echo $GITHUB_WORKSPACE 
+          cat $GITHUB_WORKSPACE/anil/anil.txt
