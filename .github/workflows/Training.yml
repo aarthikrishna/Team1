@@ -18,4 +18,4 @@ jobs:
        - name: Print files 
          run:  |
           echo $GITHUB_WORKSPACE 
-          ls - lrt
+          ls -lrt
