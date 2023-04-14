@@ -1,6 +1,10 @@
 name: TrainingBatch
 on: 
-  workflow_dispatch
+  on:
+  push:
+    branches:
+      - main
+   workflow_dispatch
 env:
   artifact_name: ''
 
